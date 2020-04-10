@@ -1,3 +1,3 @@
-import '../less/My.less';
+import '../sass/My.scss';
 
 console.log('testy');

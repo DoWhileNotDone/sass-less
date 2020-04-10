@@ -42,11 +42,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.less$/,
+                test: /\.s[ac]ss$/i,
                 loader: [
                     'style-loader',
                     'css-loader',
-                    'less-loader'
+                    'sass-loader'
                 ],
             },
         ],
