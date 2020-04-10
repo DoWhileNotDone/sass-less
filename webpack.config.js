@@ -9,6 +9,12 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public/'),
     },
+    devServer: {
+      contentBase: path.join(__dirname, 'public'),
+      compress: true,
+      host: '0.0.0.0',
+      port: 8080
+    },
     plugins: [
         new HtmlWebpackPlugin({
           title: "My Form",
