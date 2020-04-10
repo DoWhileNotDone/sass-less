@@ -1,0 +1,21 @@
+
+.border-radius(@size: @border-radius-size) {
+    border-radius: @size;
+    -moz-border-radius: @size;
+    -webkit-border-radius: @size;
+}
+
+.border-radius(@first-size, @second-size) {
+    border-radius: @first-size @second-size;
+    -moz-border-radius: @first-size @second-size;
+    -webkit-border-radius: @first-size @second-size;
+}
+
+.colour(@colour) when (alpha(@colour) >= 50%) {
+    color: Black;
+}
+
+.colour(@colour) when (alpha(@colour) < 50%) {
+    color: colour;
+}
+
